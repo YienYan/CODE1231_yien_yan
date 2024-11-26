@@ -1,4 +1,3 @@
-# CODE1231_yien_yan
 #include <Servo.h>
 #include <MsTimer2.h>
 
@@ -34,12 +33,12 @@ void msTimer2_func() {
     }
     servo_A0.write(currAngle);
 
-    // 如果舵机达到目标角度，记录完成时间
+    
     if (currAngle == targetAngle && targetAngle == 180) {
-      lightOffTimer = millis(); // 记录舵机到达目标角度的时间
+      lightOffTimer = millis(); 
     }
 
-    delay(0);  // 舵机调整后立即返回，不延迟
+    delay(0);  
   }
 }
 
